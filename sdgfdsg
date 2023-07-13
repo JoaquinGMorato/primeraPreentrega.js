@@ -1,0 +1,84 @@
+// Necesitamos pedir la suma de dos numer a un usuario 3 veeces
+
+
+function calculadora(operacion) {
+
+    const primerNumero = parseInt(prompt("Ingrese el primer numero"));
+    const segundoNumero = parseInt(prompt("Ingrese segundo Numero"));
+    // const operacion = prompt("Escriba la operacion(sumar, restar, multiplicar, dividir)");
+
+    let resultado = 0
+
+    switch (operacion) {
+        case "sumar":
+            resultado = primerNumero + segundoNumero;
+            alert(resultado);
+            break;
+
+        case "restar":
+
+            resultado = primerNumero - segundoNumero;
+            alert(resultado);
+            break;
+        case "multiplicar":
+            resultado = primerNumero * segundoNumero;
+            alert(resultado);
+            break;
+
+        case "dividir":
+            resultado = primerNumero / segundoNumero;
+            alert(resultado);
+            break;
+
+        default:
+            alert("no ingresaste correctamente");
+            break;
+    }
+}
+
+
+for (let i = 0; i < 3; i++) {
+
+    const respuestaDelUsuario = prompt("Escriba la operacion(sumar, restar, multiplicar, dividir)");
+
+    calculadora(respuestaDelUsuario)
+}
+
+
+
+
+
+/* 
+// Scopes (alcance de las variables)
+
+let nombre="daniel"; // variable global xq esta en el nivel mas alto
+
+function saludar(){
+    let apellido="villjan" // variable local dentro de la funcion
+    console.log("tu apelido es "+ apellido)
+    console.log("hola " + nombre)
+}
+
+// aca no funcionari la variable apellido por estar fuera de las llaves
+saludar(); */
+
+/* // Tipos de funciones
+
+function nombreDeLaFuncion(parametros){//bloque de codigo a ejecutar
+}
+
+const nombreDeLaFuncionFlecha = (parametro) =>{
+// bloquede codigo a ejecutar
+}
+
+nombreDeLaFuncion("hola")
+
+nombreDeLaFuncionFlecha("hola")
+
+const nombreDeLaFuncionAnonima = function(parametro){
+    //bloque de codigo a ejecutar
+}
+
+nombreDeLaFuncionAnonima("hola")
+
+//son iguales las tres funciones */

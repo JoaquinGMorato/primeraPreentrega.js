@@ -5,6 +5,19 @@ let nombre = prompt("Por favor ingrese su nombre");
 
 let edad = prompt("Hola " + nombre + " por favor ingrese su edad");
 
+let contrasena= prompt("Ingrese su contraseña");
+
+let verficacionContrasena = prompt("Verifique su contraseña");
+
+while(contrasena != verficacionContrasena){
+
+    alert("Su contraseña no ha podido se verificada");
+
+    verficacionContrasena = prompt("Verifique su contraseña")
+};
+
+alert("Su contraseña ha sido verificada");
+
 let sumaDinero = 0;
 
 function calculadora(operacion) {
@@ -40,7 +53,7 @@ if (edad < 18) {
     alert( nombre + " no tenes edad suficiente para seguir operando, te esperamos en " + mayorEdad + " años")
 }
 
-else {
+else {   
     sumaDinero = parseInt(prompt("Ingresa cuanto Dinero queres para tu prestamo, tenes autorizado hasta 100000"));
     if (sumaDinero > 100000) { alert("No estas autorizado para pedir ese monto") }
     else {

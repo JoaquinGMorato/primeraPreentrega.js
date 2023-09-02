@@ -8,10 +8,11 @@ form{
 
 }
 
-.botonInicio{
+#botonInicio{
 
-    width: 50px;
+    width: 100px;
     background-color: aqua;
+    border-radius: 10px;
 }
 
 .mostrador { 
@@ -21,4 +22,34 @@ form{
     justify-content: center;
     gap: 10vh;
     background-color: green;
+}
+
+button{
+    background-color: burlywood;
+    border-radius: 10px;
+    
+}
+
+div{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+   
+
+}
+
+.montoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+
+}
+
+#comparar{
+    background-color: aqua;
+    font-weight: 1000;
+
 }
